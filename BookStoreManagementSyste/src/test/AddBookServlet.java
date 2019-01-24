@@ -30,6 +30,8 @@ public class AddBookServlet extends HttpServlet{
 			b.setBQty(BQty);
 			b.setBPrice(BPrice);
 			
+			sct.setAttribute("bookref", b);
+			
 			pw.println("VERIFY the Book Details");
 			pw.println("<a href='verify'>CLICK HERE</a>");
 	
